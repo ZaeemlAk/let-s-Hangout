@@ -1,0 +1,61 @@
+.contact-section {
+    background: linear-gradient(to right, #000, #004080); 
+    color: white; 
+    padding: 20px;
+    text-align: center; 
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; 
+    margin: 10px 0; 
+}
+
+.icon {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+}
+
+.map-container {
+    margin-top: 20px; 
+}
+
+a {
+    color: #00ccff; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+@media (max-width: 610px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        width: 100%; 
+    }
+
+    .icon {
+        width: 25px; 
+        height: 25px; 
+    }
+
+    /* Adjust map size for mobile */
+    .map-container iframe {
+        height: 200px;
+        width:500px;
+    }
+}

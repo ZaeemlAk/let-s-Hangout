@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #000, #004080);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: 'Lobster', cursive;
+  color: aqua;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  height: 120px;
+  margin-right: 20px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.contact-item img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+footer {
+  background: linear-gradient(to right, #000, #004080);
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+
+/* Media Queries */
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .title {
+    font-size: 2rem; 
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header-content {
+    flex-direction: row; 
+  }
+
+  .title {
+    font-size: 2.5rem; 
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+  .title {
+    font-size: 3rem; 
+  }
+
+  .logo {
+    height: 120px; 
+  }
+
+  nav ul {
+    justify-content: center; 
+  }
+}
